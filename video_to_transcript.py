@@ -92,6 +92,6 @@ if __name__ == "__main__":
     textFileName = f"{videoFileName.replace('.mp4','')}_text.txt"
 
     vt.video2audiowav(videoFileName, audioFileName) ## Genera el audio
-    vt.splitwav(audioFileName, 120) ## Divide el audio en partes
+    vt.splitwav(audioFileName, 120) ## Divide el audio en partes de 120 segundos
     vt.splitwav2text(textFileName) ## Genera el transcrito de las partes
     vt.cleanProcessing(audioFileName) ## Limpia el proceso
